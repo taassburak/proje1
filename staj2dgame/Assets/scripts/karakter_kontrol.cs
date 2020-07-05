@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class karakter_kontrol : MonoBehaviour
 {
+   
+
 
     public GameObject range;
 
@@ -12,9 +15,11 @@ public class karakter_kontrol : MonoBehaviour
     public Sprite[] yurumeAnim;
     public Sprite[] olumAnim;
     public Sprite[] attackAnim;
+    public Sprite[] blokAnim;
 
 
-    
+
+    int blokAnimSayac = 0;
     int olumAnimSayac = 0;
     int beklemeAnimSayac = 0;
     int ziplamaAnimSayac = 0;
@@ -27,6 +32,7 @@ public class karakter_kontrol : MonoBehaviour
     float runningTime = 0;
     float olumTime = 0;
     float attackTime = 0;
+    float blokTime = 0;
     Rigidbody2D physics;
     Vector3 vec;
     bool jumpeonce = true;
@@ -37,6 +43,15 @@ public class karakter_kontrol : MonoBehaviour
 
     int can = 100;
 
+    float coin = 0;
+    public Text cointext;
+    public Text cantext;
+
+    float coinYokOlmaTime=0;
+    float canYokOlmaTime = 0;
+
+    bool bloklama = false;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -45,13 +60,16 @@ public class karakter_kontrol : MonoBehaviour
         //kameranın oyuncuyu takip etmesi için bir gameobject oluşturup main kamerayı oluşturduğumuz kamera objesine verdik
         kamera = GameObject.FindGameObjectWithTag("MainCamera");
         kameraIlkPos = kamera.transform.position - transform.position;
+        cointext.text = "ALTIN = " + coin + " / 15";
+        cantext.text = "CAN = " + can + " / 100";
     }
 
     
     void Update()
     {
-        Attack();
-        //ikinci defa zıplamaması için
+        
+        
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (jumpeonce && can != 0)
@@ -59,15 +77,17 @@ public class karakter_kontrol : MonoBehaviour
                 physics.AddForce(new Vector2(0, 100));
                 jumpeonce = false;
             }
-
-
         }
     }
     void FixedUpdate()
     {
+        //Debug.Log(can);
         Animation();
         charmove();
-        
+        Attack();
+        blok();
+        kameraKontrol();
+
     }
     void charmove()
     {
@@ -83,22 +103,76 @@ public class karakter_kontrol : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //updatede yazdığım kodun çalışması için collision enter verdim
+       
         jumpeonce = true;
     }
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.tag=="dusman")
+        if (col.gameObject.tag == "zombi")
         {
-            can = 0;
-        }  
+
+            if (bloklama==false)
+            {
+                can -= 5;
+                cantext.text = "CAN = " + can + " / 100";
+            }
+
+            
+        }
+
+        if (col.gameObject.tag == "can")
+        {
+            
+            if (can>=70)
+            {
+                can = 100;
+                cantext.text = "CAN = " + can + " / 100";
+                col.GetComponent<CircleCollider2D>().enabled = false;
+                col.GetComponent<can>().enabled = true;
+                
+                canYokOlmaTime += Time.deltaTime;
+                if (canYokOlmaTime >= 0.019f)
+                {
+                    Destroy(col.gameObject);
+                }
+            }
+            else if(can<70)
+            {
+                can += 10;
+                cantext.text = "CAN = " + can + " / 100";
+                col.GetComponent<CircleCollider2D>().enabled = false;
+                col.GetComponent<can>().enabled = true;
+                
+                canYokOlmaTime += Time.deltaTime;
+                if (canYokOlmaTime >= 0.019f)
+                {
+                    Destroy(col.gameObject);
+                }
+            }
+            
+        }
+
+        if (col.gameObject.tag=="gold")
+        {
+
+            coin += 0.5f;
+            cointext.text = "ALTIN = " + coin + " / 15";
+            col.GetComponent<coins>().enabled = true;
+            col.GetComponent<CircleCollider2D>().enabled = false;
+            coinYokOlmaTime += Time.deltaTime;
+            if (coinYokOlmaTime>=0.019f)
+            {
+                 Destroy(col.gameObject);
+            }
+        }
+        
     }
 
     void Animation()
     {
         if (jumpeonce == true)
         {
-            if (horizontal == 0 && can!=0 )
+            if (horizontal == 0 && can != 0)
             {
                 waitingTime += Time.deltaTime;
                 if (waitingTime > 0.09f)
@@ -173,22 +247,52 @@ public class karakter_kontrol : MonoBehaviour
     }
     void Attack()
     {
-        if (Input.GetButton("Fire1"))
+        if (can!=0)
         {
-            range.gameObject.SetActive(true);
-            attackTime += Time.deltaTime;
-            if (attackTime > 0.001f)
+            if (Input.GetButton("Fire1"))
             {
-                spriteRenderer.sprite = attackAnim[attackAnimSayac++];
-                if (attackAnimSayac == attackAnim.Length)
+                range.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+
+                attackTime += Time.deltaTime;
+                if (attackTime > 0.001f)
                 {
-                    attackAnimSayac = 0;
+                    spriteRenderer.sprite = attackAnim[attackAnimSayac++];
+                    if (attackAnimSayac == attackAnim.Length)
+                    {
+                        attackAnimSayac = 0;
+
+                    }
+                    attackTime = 0;
                 }
-                attackTime = 0;
+
+            }
+            else
+                range.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        }
+        
+    }
+    void blok()
+    {
+        if (can!=0)
+        {
+            if (Input.GetButton("Fire2"))
+            {
+                blokTime += Time.deltaTime;
+                if (blokTime > 0.001f)
+                {
+                    spriteRenderer.sprite = blokAnim[blokAnimSayac++];
+                    if (blokAnimSayac == blokAnim.Length)
+                    {
+                        blokAnimSayac = blokAnim.Length - 1;
+                    }
+                    blokTime = 0;
+                }
+                bloklama = true;
+
             }
         }
-        else
-            range.gameObject.SetActive(false);
+        
+
     }
 
     void kameraKontrol()

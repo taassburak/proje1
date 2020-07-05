@@ -6,6 +6,9 @@ TagManager:
   tags:
   - dusman
   - sword
+  - zombi
+  - gold
+  - can
   layers:
   - Default
   - TransparentFX
@@ -15,10 +18,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - zombi
+  - Player
+  - coin
+  - can
   - 
   - 
   - 
