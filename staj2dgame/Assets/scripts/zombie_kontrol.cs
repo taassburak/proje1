@@ -21,7 +21,7 @@ public class zombie_kontrol : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Rigidbody2D fizik;
 
-    public int ENcan = 100;
+    public int ENcan = 150;
 
     
     bool hasarAldı = false;
@@ -36,8 +36,9 @@ public class zombie_kontrol : MonoBehaviour
 
     RaycastHit2D ray;
     public LayerMask layermask;
-    
 
+    int playerCan;
+     
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -47,8 +48,7 @@ public class zombie_kontrol : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-     void takip()
+    void takip()
     {
         if (Vector2.Distance(transform.position, target.position) > distance)
         {
@@ -59,18 +59,13 @@ public class zombie_kontrol : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+        else
+            transform.localScale = new Vector3(1, 1, 1);
     }
-
 
     void Update()
     {
-        if (ray.collider.tag=="Player")
-        {
-            if (ENcan != 0)
-            {
-                takip();
-            }
-        }
+        
         
         if (death==true)
         {
@@ -78,13 +73,26 @@ public class zombie_kontrol : MonoBehaviour
         }
     
     }
+
     private void FixedUpdate()
     {
+
+        GameObject thePlayer = GameObject.FindGameObjectWithTag("Player");
+        karakter_kontrol_levels karakterKontrol = thePlayer.GetComponent<karakter_kontrol_levels>();
+        playerCan = karakterKontrol.can;
+
         animasyon();
 
         benigordumu();
-        
-        
+
+        if (ray.collider.tag == "Player")
+        {
+
+            if (ENcan != 0 && playerCan>0)
+            {
+                takip();
+            }
+        }
 
     }
 
@@ -107,6 +115,7 @@ public class zombie_kontrol : MonoBehaviour
 
         if (ENcan==0)
         {
+            fizik.velocity = new Vector2(0, 0);
             gameObject.GetComponent<PolygonCollider2D>().enabled=false;
             fizik.isKinematic = true;
             olumAnimTime += Time.deltaTime;
@@ -127,9 +136,6 @@ public class zombie_kontrol : MonoBehaviour
         }
 
     }
-
-    
-
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -158,7 +164,7 @@ public class zombie_kontrol : MonoBehaviour
     {
         Vector3 rayYonum = target.transform.position - transform.position;
         ray = Physics2D.Raycast(transform.position, rayYonum, 1000, layermask);
-        Debug.DrawLine(transform.position, ray.point, Color.magenta);
+        Debug.DrawLine(transform.position, ray.point, Color.green);
     }
     
 }

@@ -1,0 +1,1743 @@
+fileFormatVersion: 2
+guid: 5720cf1427380d340b72bf2c8516542f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cyclops_scimitar_sheet_0
+    21300002: cyclops_scimitar_sheet_1
+    21300004: cyclops_scimitar_sheet_2
+    21300006: cyclops_scimitar_sheet_3
+    21300008: cyclops_scimitar_sheet_4
+    21300010: cyclops_scimitar_sheet_5
+    21300012: cyclops_scimitar_sheet_6
+    21300014: cyclops_scimitar_sheet_7
+    21300016: cyclops_scimitar_sheet_8
+    21300018: cyclops_scimitar_sheet_9
+    21300020: cyclops_scimitar_sheet_10
+    21300022: cyclops_scimitar_sheet_11
+    21300024: cyclops_scimitar_sheet_12
+    21300026: cyclops_scimitar_sheet_13
+    21300028: cyclops_scimitar_sheet_14
+    21300030: cyclops_scimitar_sheet_15
+    21300032: cyclops_scimitar_sheet_16
+    21300034: cyclops_scimitar_sheet_17
+    21300036: cyclops_scimitar_sheet_18
+    21300038: cyclops_scimitar_sheet_19
+    21300040: cyclops_scimitar_sheet_20
+    21300042: cyclops_scimitar_sheet_21
+    21300044: cyclops_scimitar_sheet_22
+    21300046: cyclops_scimitar_sheet_23
+    21300048: cyclops_scimitar_sheet_24
+    21300050: cyclops_scimitar_sheet_25
+    21300052: cyclops_scimitar_sheet_26
+    21300054: cyclops_scimitar_sheet_27
+    21300056: cyclops_scimitar_sheet_28
+    21300058: cyclops_scimitar_sheet_29
+    21300060: cyclops_scimitar_sheet_30
+    21300062: cyclops_scimitar_sheet_31
+    21300064: cyclops_scimitar_sheet_32
+    21300066: cyclops_scimitar_sheet_33
+    21300068: cyclops_scimitar_sheet_34
+    21300070: cyclops_scimitar_sheet_35
+    21300072: cyclops_scimitar_sheet_36
+    21300074: cyclops_scimitar_sheet_37
+    21300076: cyclops_scimitar_sheet_38
+    21300078: cyclops_scimitar_sheet_39
+    21300080: cyclops_scimitar_sheet_40
+    21300082: cyclops_scimitar_sheet_41
+    21300084: cyclops_scimitar_sheet_42
+    21300086: cyclops_scimitar_sheet_43
+    21300088: cyclops_scimitar_sheet_44
+    21300090: cyclops_scimitar_sheet_45
+    21300092: cyclops_scimitar_sheet_46
+    21300094: cyclops_scimitar_sheet_47
+    21300096: cyclops_scimitar_sheet_48
+    21300098: cyclops_scimitar_sheet_49
+    21300100: cyclops_scimitar_sheet_50
+    21300102: cyclops_scimitar_sheet_51
+    21300104: cyclops_scimitar_sheet_52
+    21300106: cyclops_scimitar_sheet_53
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 3
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1182
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba00c6d0c9637646bb7acac9d4a708d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1182
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983924767ef1f914c9899319250b4cc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1182
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b70a0ba94eead44aca84bd2f8d614b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1182
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df43a34c129a2ee44877c8bb78461d2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1182
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fdc85f0e5ce144cb02fa750a2c3958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1182
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c27f11a069de24abc7e2d660b65df1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1182
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f473f3e904c9c514b819e74a17ccc1fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1182
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a8e59dba27e754290f6787684c2652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1182
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b515e224e922f5a4d88de0e5d904f9ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1182
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a24a193162da4449edd027c480c36f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1086
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66116379820991849b478c5eeed69534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1086
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1369119c34bcc7a40a63675c29fa7fa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1086
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf34eab1586b984cb877daa75733c98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1086
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33648e7395b1db141a204842b7341ffd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 991
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a453ec1462e6c42afe0794ea5d254a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 991
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc14eebe2451ded43b8554cb638cd857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 991
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebb5163c1b052e44ab7ebaa44c22af7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 991
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dfe51bb7db38a42a47e75acad829c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 896
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ed5f42b398f5446b755d4cd0395f2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 896
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13468fc81c2fe054daea7bae40a38dde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 896
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c55b20d2f380b42bd5af06d7fa6ef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 896
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ee4703eb9c3474bb3e24d2a893fede
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 799
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83c5068a9f1fb24fb5269f81d1a458d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 799
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d36864035d8cda4b9d3fad87d6a2b48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 799
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0efe648744ad6f4080a18d525551163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 799
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccdf5f16ea8601449ee54ff7ebf043d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 702
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d8ed8fe4e05974685ddf572c9a42c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 704
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aaded1bf1f24ea4c91455eece21cca0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 702
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2d6a8cfe0281c4188ec6a0d5d57623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 704
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1079c77064144f540bf32b132dda66f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 608
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5bca60dd6351449a4b010d5e54c99d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 611
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c474897f9897294cbdfaaa127a530b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 607
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91594d276c1e1342a76b65f43c7a695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 612
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1303d24e289e3d9419371a6f55bad0bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 512
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211ab5183a74e2a4ca42ddf64cfdc5b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 511
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdf086d4daf10d40ad6b0f65980ce38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 513
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac93e911acb3b544881e2c1e1ca6c809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 512
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c9a11fef5e17a41959ebd39dddbabf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 416
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d5f54c6b08da448bb453870f2c52d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 419
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bcb20c528628642a96489e85e73ea3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 415
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2add894a42789b6409fb606d94a7cc4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 420
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156722bfa66f8df43900f09ce0fc57c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 318
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8336e2739cf5acf4b8267fc89714266d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 318
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5f88dcb14dc54439a763a44fb2011d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 297
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae913024d71895478576e119c01e958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 223
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cfb2e52dcc753409323789e8e61022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 223
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536dd33284806a542bc0d35a9bad256e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 223
+        width: 67
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37eae89eb491404f959bf14388e3259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 128
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9942b3f8d47b4d4a9dca5bcf8dd93b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 128
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de250a3172d439d41a03c208354eb065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 128
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32031c73e7b7abf4a9fa7e6913639725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 31
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377a96afdfc76dd45b5cda7cbb6f93db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 31
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d95c557f254964ca8c2a8412b289f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_scimitar_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 31
+        width: 67
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f9cddd6053a1744a50a1306a0abc86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape:
+    - - {x: -443, y: -541.5}
+      - {x: -443, y: -594.5}
+      - {x: -418, y: -594.5}
+      - {x: -418, y: -552.5}
+      - {x: -432, y: -541.5}
+    - - {x: -347, y: -553.5}
+      - {x: -356, y: -560.5}
+      - {x: -363, y: -572.5}
+      - {x: -363, y: -580.5}
+      - {x: -357, y: -584.5}
+      - {x: -335, y: -594.5}
+      - {x: -318, y: -594.5}
+      - {x: -316, y: -589.5}
+      - {x: -316, y: -568.5}
+      - {x: -328, y: -553.5}
+    - - {x: -252, y: -558.5}
+      - {x: -263, y: -563.5}
+      - {x: -263, y: -587.5}
+      - {x: -258, y: -594.5}
+      - {x: -195, y: -594.5}
+      - {x: -192, y: -593.5}
+      - {x: -192, y: -576.5}
+      - {x: -218, y: -558.5}
+    - - {x: -435, y: -452.5}
+      - {x: -436, y: -455.5}
+      - {x: -434, y: -458.5}
+      - {x: -449, y: -477.5}
+      - {x: -449, y: -487.5}
+      - {x: -442, y: -497.5}
+      - {x: -420, y: -497.5}
+      - {x: -412, y: -482.5}
+      - {x: -412, y: -462.5}
+      - {x: -422, y: -452.5}
+    - - {x: -340, y: -462.5}
+      - {x: -353, y: -475.5}
+      - {x: -353, y: -487.5}
+      - {x: -346, y: -497.5}
+      - {x: -331, y: -497.5}
+      - {x: -327, y: -496.5}
+      - {x: -325, y: -490.5}
+      - {x: -325, y: -471.5}
+      - {x: -336, y: -462.5}
+    - - {x: -262, y: -493.5}
+      - {x: -260, y: -497.5}
+      - {x: -224, y: -497.5}
+      - {x: -210, y: -487.5}
+      - {x: -210, y: -452.5}
+      - {x: -214, y: -442.5}
+      - {x: -252, y: -442.5}
+      - {x: -262, y: -450.5}
+    - - {x: -226, y: -479.5}
+      - {x: -226, y: -475.5}
+      - {x: -233, y: -468.5}
+      - {x: -234, y: -468.5}
+      - {x: -227, y: -475.5}
+      - {x: -227, y: -481.5}
+      - {x: -228, y: -481.5}
+    - - {x: -430, y: -349.5}
+      - {x: -433, y: -350.5}
+      - {x: -446, y: -361.5}
+      - {x: -446, y: -402.5}
+      - {x: -421, y: -402.5}
+      - {x: -421, y: -353.5}
+      - {x: -422, y: -349.5}
+    - - {x: -340, y: -361.5}
+      - {x: -356, y: -381.5}
+      - {x: -356, y: -397.5}
+      - {x: -351, y: -402.5}
+      - {x: -321, y: -402.5}
+      - {x: -309, y: -389.5}
+      - {x: -309, y: -372.5}
+      - {x: -329, y: -361.5}
+    - - {x: -252, y: -366.5}
+      - {x: -262, y: -369.5}
+      - {x: -270, y: -374.5}
+      - {x: -278, y: -378.5}
+      - {x: -285, y: -384.5}
+      - {x: -288, y: -392.5}
+      - {x: -288, y: -397.5}
+      - {x: -283, y: -401.5}
+      - {x: -275, y: -402.5}
+      - {x: -226, y: -402.5}
+      - {x: -217, y: -386.5}
+      - {x: -217, y: -376.5}
+      - {x: -245, y: -366.5}
+    - - {x: -255, y: -283.5}
+      - {x: -249, y: -268.5}
+      - {x: -250, y: -267.5}
+      - {x: -259, y: -267.5}
+      - {x: -272, y: -280.5}
+      - {x: -272, y: -314.5}
+      - {x: -257, y: -328.5}
+      - {x: -222, y: -328.5}
+      - {x: -214, y: -326.5}
+      - {x: -214, y: -281.5}
+      - {x: -240, y: -268.5}
+    - - {x: -434, y: -268.5}
+      - {x: -428, y: -264.5}
+      - {x: -426, y: -261.5}
+      - {x: -426, y: -258.5}
+      - {x: -433, y: -258.5}
+      - {x: -437, y: -259.5}
+      - {x: -450, y: -269.5}
+      - {x: -450, y: -304.5}
+      - {x: -437, y: -307.5}
+      - {x: -414, y: -307.5}
+      - {x: -414, y: -280.5}
+      - {x: -431, y: -267.5}
+    - - {x: -332, y: -259.5}
+      - {x: -346, y: -270.5}
+      - {x: -349, y: -283.5}
+      - {x: -349, y: -298.5}
+      - {x: -336, y: -307.5}
+      - {x: -315, y: -307.5}
+      - {x: -310, y: -287.5}
+      - {x: -310, y: -270.5}
+      - {x: -326, y: -259.5}
+    - - {x: -237, y: -304.5}
+      - {x: -238, y: -304.5}
+    - - {x: -252, y: -157.5}
+      - {x: -252, y: -209.5}
+      - {x: -249, y: -210.5}
+      - {x: -227, y: -210.5}
+      - {x: -227, y: -168.5}
+      - {x: -241, y: -157.5}
+    - - {x: -431, y: -159.5}
+      - {x: -432, y: -158.5}
+      - {x: -443, y: -158.5}
+      - {x: -443, y: -205.5}
+      - {x: -439, y: -209.5}
+      - {x: -420, y: -209.5}
+      - {x: -419, y: -208.5}
+      - {x: -418, y: -195.5}
+      - {x: -418, y: -170.5}
+    - - {x: -347, y: -154.5}
+      - {x: -353, y: -183.5}
+      - {x: -353, y: -206.5}
+      - {x: -315, y: -206.5}
+      - {x: -315, y: -169.5}
+      - {x: -316, y: -167.5}
+      - {x: -331, y: -154.5}
+    - - {x: -148, y: -153.5}
+      - {x: -156, y: -153.5}
+      - {x: -163, y: -164.5}
+      - {x: -163, y: -205.5}
+      - {x: -125, y: -205.5}
+      - {x: -125, y: -184.5}
+      - {x: -132, y: -166.5}
+    - - {x: -315, y: -75.5}
+      - {x: -328, y: -66.5}
+      - {x: -348, y: -66.5}
+      - {x: -353, y: -72.5}
+      - {x: -353, y: -104.5}
+      - {x: -347, y: -114.5}
+      - {x: -337, y: -114.5}
+      - {x: -321, y: -100.5}
+      - {x: -314, y: -87.5}
+      - {x: -314, y: -79.5}
+    - - {x: -434, y: -68.5}
+      - {x: -446, y: -72.5}
+      - {x: -449, y: -83.5}
+      - {x: -449, y: -113.5}
+      - {x: -422, y: -113.5}
+      - {x: -412, y: -105.5}
+      - {x: -412, y: -78.5}
+      - {x: -426, y: -68.5}
+    - - {x: -140, y: -64.5}
+      - {x: -148, y: -64.5}
+      - {x: -149, y: -67.5}
+      - {x: -147, y: -70.5}
+      - {x: -143, y: -71.5}
+      - {x: -147, y: -72.5}
+      - {x: -163, y: -89.5}
+      - {x: -163, y: -100.5}
+      - {x: -142, y: -113.5}
+      - {x: -132, y: -113.5}
+      - {x: -127, y: -98.5}
+      - {x: -125, y: -87.5}
+      - {x: -125, y: -74.5}
+    - - {x: -233, y: -67.5}
+      - {x: -253, y: -67.5}
+      - {x: -257, y: -74.5}
+      - {x: -257, y: -102.5}
+      - {x: -251, y: -111.5}
+      - {x: -239, y: -112.5}
+      - {x: -233, y: -112.5}
+      - {x: -227, y: -108.5}
+      - {x: -220, y: -88.5}
+      - {x: -220, y: -76.5}
+    - - {x: -251, y: 34.5}
+      - {x: -253, y: 26.5}
+      - {x: -253, y: -18.5}
+      - {x: -235, y: -18.5}
+      - {x: -228, y: -17.5}
+      - {x: -228, y: 34.5}
+    - - {x: -438, y: 33.5}
+      - {x: -446, y: 25.5}
+      - {x: -446, y: -8.5}
+      - {x: -445, y: -17.5}
+      - {x: -421, y: -17.5}
+      - {x: -421, y: 33.5}
+    - - {x: -346, y: 37.5}
+      - {x: -357, y: 18.5}
+      - {x: -357, y: -14.5}
+      - {x: -319, y: -14.5}
+      - {x: -319, y: 5.5}
+      - {x: -330, y: 37.5}
+    - - {x: -163, y: -8.5}
+      - {x: -158, y: -13.5}
+      - {x: -125, y: -13.5}
+      - {x: -125, y: 19.5}
+      - {x: -128, y: 38.5}
+      - {x: -150, y: 38.5}
+      - {x: -163, y: 19.5}
+    - - {x: -436, y: 133.5}
+      - {x: -450, y: 125.5}
+      - {x: -450, y: 86.5}
+      - {x: -448, y: 76.5}
+      - {x: -413, y: 76.5}
+      - {x: -409, y: 84.5}
+      - {x: -409, y: 112.5}
+      - {x: -422, y: 133.5}
+    - - {x: -245, y: 128.5}
+      - {x: -246, y: 127.5}
+      - {x: -259, y: 116.5}
+      - {x: -259, y: 108.5}
+      - {x: -258, y: 104.5}
+      - {x: -254, y: 76.5}
+      - {x: -223, y: 76.5}
+      - {x: -217, y: 87.5}
+      - {x: -217, y: 107.5}
+      - {x: -229, y: 128.5}
+    - - {x: -313, y: 112.5}
+      - {x: -321, y: 136.5}
+      - {x: -334, y: 136.5}
+      - {x: -335, y: 135.5}
+      - {x: -350, y: 126.5}
+      - {x: -350, y: 84.5}
+      - {x: -348, y: 78.5}
+      - {x: -327, y: 78.5}
+      - {x: -324, y: 79.5}
+      - {x: -321, y: 83.5}
+      - {x: -323, y: 91.5}
+      - {x: -313, y: 93.5}
+    - - {x: -156, y: 136.5}
+      - {x: -163, y: 126.5}
+      - {x: -163, y: 92.5}
+      - {x: -155, y: 78.5}
+      - {x: -143, y: 78.5}
+      - {x: -123, y: 90.5}
+      - {x: -123, y: 126.5}
+      - {x: -131, y: 136.5}
+    - - {x: -336, y: 121.5}
+      - {x: -339, y: 119.5}
+      - {x: -340, y: 114.5}
+      - {x: -339, y: 114.5}
+    - - {x: -441, y: 226.5}
+      - {x: -444, y: 225.5}
+      - {x: -444, y: 179.5}
+      - {x: -440, y: 175.5}
+      - {x: -433, y: 173.5}
+      - {x: -419, y: 173.5}
+      - {x: -419, y: 218.5}
+      - {x: -431, y: 226.5}
+    - - {x: -347, y: 229.5}
+      - {x: -348, y: 228.5}
+      - {x: -348, y: 173.5}
+      - {x: -323, y: 173.5}
+      - {x: -323, y: 221.5}
+      - {x: -338, y: 229.5}
+    - - {x: -252, y: 225.5}
+      - {x: -253, y: 198.5}
+      - {x: -253, y: 178.5}
+      - {x: -243, y: 173.5}
+      - {x: -227, y: 173.5}
+      - {x: -227, y: 202.5}
+      - {x: -230, y: 227.5}
+      - {x: -243, y: 231.5}
+      - {x: -254, y: 231.5}
+      - {x: -254, y: 228.5}
+    - - {x: -148, y: 229.5}
+      - {x: -156, y: 229.5}
+      - {x: -156, y: 173.5}
+      - {x: -131, y: 173.5}
+      - {x: -131, y: 218.5}
+      - {x: -132, y: 224.5}
+    - - {x: -434, y: 315.5}
+      - {x: -446, y: 311.5}
+      - {x: -449, y: 300.5}
+      - {x: -449, y: 270.5}
+      - {x: -422, y: 270.5}
+      - {x: -412, y: 278.5}
+      - {x: -412, y: 305.5}
+      - {x: -426, y: 315.5}
+    - - {x: -342, y: 317.5}
+      - {x: -342, y: 314.5}
+      - {x: -340, y: 311.5}
+      - {x: -355, y: 294.5}
+      - {x: -355, y: 270.5}
+      - {x: -317, y: 270.5}
+      - {x: -317, y: 317.5}
+    - - {x: -242, y: 315.5}
+      - {x: -254, y: 311.5}
+      - {x: -257, y: 300.5}
+      - {x: -257, y: 270.5}
+      - {x: -230, y: 270.5}
+      - {x: -220, y: 278.5}
+      - {x: -220, y: 305.5}
+      - {x: -234, y: 315.5}
+    - - {x: -149, y: 317.5}
+      - {x: -150, y: 314.5}
+      - {x: -148, y: 311.5}
+      - {x: -144, y: 310.5}
+      - {x: -163, y: 288.5}
+      - {x: -163, y: 280.5}
+      - {x: -155, y: 270.5}
+      - {x: -131, y: 270.5}
+      - {x: -125, y: 290.5}
+      - {x: -125, y: 309.5}
+      - {x: -141, y: 317.5}
+    - - {x: -429, y: 418.5}
+      - {x: -432, y: 417.5}
+      - {x: -445, y: 408.5}
+      - {x: -445, y: 365.5}
+      - {x: -420, y: 365.5}
+      - {x: -420, y: 414.5}
+      - {x: -421, y: 418.5}
+    - - {x: -324, y: 421.5}
+      - {x: -331, y: 421.5}
+      - {x: -335, y: 420.5}
+      - {x: -349, y: 409.5}
+      - {x: -349, y: 365.5}
+      - {x: -325, y: 365.5}
+      - {x: -324, y: 371.5}
+    - - {x: -242, y: 423.5}
+      - {x: -253, y: 411.5}
+      - {x: -253, y: 365.5}
+      - {x: -226, y: 365.5}
+      - {x: -226, y: 423.5}
+    - - {x: -132, y: 421.5}
+      - {x: -140, y: 421.5}
+      - {x: -143, y: 420.5}
+      - {x: -157, y: 408.5}
+      - {x: -157, y: 365.5}
+      - {x: -135, y: 365.5}
+      - {x: -132, y: 370.5}
+    - - {x: -422, y: 490.5}
+      - {x: -431, y: 500.5}
+      - {x: -434, y: 499.5}
+      - {x: -428, y: 503.5}
+      - {x: -426, y: 506.5}
+      - {x: -426, y: 509.5}
+      - {x: -433, y: 509.5}
+      - {x: -437, y: 508.5}
+      - {x: -450, y: 499.5}
+      - {x: -450, y: 463.5}
+      - {x: -443, y: 460.5}
+      - {x: -420, y: 460.5}
+      - {x: -414, y: 461.5}
+      - {x: -414, y: 478.5}
+      - {x: -416, y: 484.5}
+    - - {x: -338, y: 500.5}
+      - {x: -329, y: 510.5}
+      - {x: -329, y: 513.5}
+      - {x: -345, y: 513.5}
+      - {x: -353, y: 499.5}
+      - {x: -353, y: 471.5}
+      - {x: -351, y: 460.5}
+      - {x: -316, y: 460.5}
+      - {x: -316, y: 483.5}
+      - {x: -335, y: 501.5}
+    - - {x: -230, y: 492.5}
+      - {x: -239, y: 502.5}
+      - {x: -242, y: 501.5}
+      - {x: -232, y: 514.5}
+      - {x: -232, y: 517.5}
+      - {x: -239, y: 517.5}
+      - {x: -243, y: 516.5}
+      - {x: -256, y: 509.5}
+      - {x: -256, y: 465.5}
+      - {x: -249, y: 460.5}
+      - {x: -221, y: 460.5}
+      - {x: -217, y: 464.5}
+      - {x: -217, y: 482.5}
+      - {x: -227, y: 491.5}
+    - - {x: -146, y: 500.5}
+      - {x: -136, y: 510.5}
+      - {x: -137, y: 513.5}
+      - {x: -145, y: 513.5}
+      - {x: -148, y: 512.5}
+      - {x: -161, y: 504.5}
+      - {x: -161, y: 468.5}
+      - {x: -156, y: 460.5}
+      - {x: -132, y: 460.5}
+      - {x: -127, y: 462.5}
+      - {x: -124, y: 473.5}
+      - {x: -124, y: 483.5}
+      - {x: -143, y: 501.5}
+    - - {x: -422, y: 586.5}
+      - {x: -431, y: 596.5}
+      - {x: -434, y: 595.5}
+      - {x: -428, y: 599.5}
+      - {x: -426, y: 602.5}
+      - {x: -426, y: 605.5}
+      - {x: -433, y: 605.5}
+      - {x: -437, y: 604.5}
+      - {x: -450, y: 595.5}
+      - {x: -450, y: 559.5}
+      - {x: -443, y: 556.5}
+      - {x: -420, y: 556.5}
+      - {x: -414, y: 557.5}
+      - {x: -414, y: 574.5}
+      - {x: -416, y: 580.5}
+    - - {x: -315, y: 571.5}
+      - {x: -313, y: 572.5}
+      - {x: -313, y: 590.5}
+      - {x: -327, y: 610.5}
+      - {x: -340, y: 610.5}
+      - {x: -354, y: 596.5}
+      - {x: -354, y: 578.5}
+      - {x: -353, y: 562.5}
+      - {x: -342, y: 556.5}
+      - {x: -322, y: 556.5}
+      - {x: -319, y: 558.5}
+      - {x: -322, y: 569.5}
+      - {x: -327, y: 574.5}
+      - {x: -324, y: 571.5}
+    - - {x: -242, y: 600.5}
+      - {x: -232, y: 611.5}
+      - {x: -233, y: 614.5}
+      - {x: -240, y: 614.5}
+      - {x: -244, y: 613.5}
+      - {x: -257, y: 602.5}
+      - {x: -257, y: 583.5}
+      - {x: -256, y: 571.5}
+      - {x: -252, y: 556.5}
+      - {x: -228, y: 556.5}
+      - {x: -223, y: 558.5}
+      - {x: -217, y: 571.5}
+      - {x: -217, y: 585.5}
+      - {x: -239, y: 601.5}
+    - - {x: -158, y: 614.5}
+      - {x: -159, y: 610.5}
+      - {x: -159, y: 556.5}
+      - {x: -122, y: 556.5}
+      - {x: -122, y: 591.5}
+      - {x: -134, y: 614.5}
+    - - {x: -41, y: 614.5}
+      - {x: -48, y: 614.5}
+      - {x: -52, y: 613.5}
+      - {x: -65, y: 604.5}
+      - {x: -65, y: 560.5}
+      - {x: -59, y: 556.5}
+      - {x: -32, y: 556.5}
+      - {x: -25, y: 568.5}
+      - {x: -25, y: 589.5}
+      - {x: -47, y: 601.5}
+      - {x: -50, y: 600.5}
+      - {x: -40, y: 611.5}
+    - - {x: 62, y: 614.5}
+      - {x: 37, y: 614.5}
+      - {x: 33, y: 611.5}
+      - {x: 33, y: 556.5}
+      - {x: 70, y: 556.5}
+      - {x: 70, y: 594.5}
+      - {x: 65, y: 613.5}
+    - - {x: 151, y: 614.5}
+      - {x: 144, y: 614.5}
+      - {x: 140, y: 613.5}
+      - {x: 127, y: 607.5}
+      - {x: 127, y: 566.5}
+      - {x: 129, y: 556.5}
+      - {x: 165, y: 556.5}
+      - {x: 167, y: 558.5}
+      - {x: 167, y: 584.5}
+      - {x: 145, y: 601.5}
+      - {x: 142, y: 600.5}
+      - {x: 152, y: 611.5}
+    - - {x: 254, y: 614.5}
+      - {x: 229, y: 614.5}
+      - {x: 225, y: 611.5}
+      - {x: 225, y: 556.5}
+      - {x: 262, y: 556.5}
+      - {x: 262, y: 594.5}
+      - {x: 257, y: 613.5}
+    - - {x: 334, y: 597.5}
+      - {x: 343, y: 607.5}
+      - {x: 342, y: 610.5}
+      - {x: 318, y: 610.5}
+      - {x: 318, y: 556.5}
+      - {x: 352, y: 556.5}
+      - {x: 354, y: 557.5}
+      - {x: 359, y: 573.5}
+      - {x: 359, y: 578.5}
+      - {x: 337, y: 598.5}
+    - - {x: 442, y: 586.5}
+      - {x: 433, y: 596.5}
+      - {x: 430, y: 595.5}
+      - {x: 436, y: 599.5}
+      - {x: 438, y: 602.5}
+      - {x: 438, y: 605.5}
+      - {x: 431, y: 605.5}
+      - {x: 427, y: 604.5}
+      - {x: 414, y: 596.5}
+      - {x: 414, y: 561.5}
+      - {x: 422, y: 556.5}
+      - {x: 444, y: 556.5}
+      - {x: 450, y: 557.5}
+      - {x: 450, y: 574.5}
+      - {x: 448, y: 580.5}
+    bones: []
+    spriteID: ef7f8a94c600c5d4fa0037d1f5125985
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

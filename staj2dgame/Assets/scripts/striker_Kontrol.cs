@@ -1,0 +1,267 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public class striker_Kontrol : MonoBehaviour
+{
+    public GameObject range;
+    public Sprite[] beklemeAnim;
+    float beklemeAnimTime = 0;
+    int beklemeAnimSayac = 0;
+
+    public Sprite[] hasarAnim;
+    float hasarAnimTime = 0;
+    int hasarAnimSayac = 0;
+
+    public Sprite[] olumAnim;
+    float olumAnimTime = 0;
+    int olumAnimSayac = 0;
+
+    public Sprite[] attackAnim;
+    float attackTime = 0;
+    int attackSayac = 0;
+
+    public Sprite[] yurumeAnim;
+    float yurumeTime = 0;
+    int yurumeSayac = 0;
+
+    SpriteRenderer spriteRenderer;
+    Rigidbody2D fizik;
+
+    public int ENcan = 250;
+
+
+    bool hasarAldı = false;
+    bool death = false;
+    bool attackYapti = false;
+
+
+    //takip
+    public float hiz;
+    private Transform target;
+    public float distance;
+
+
+    Vector2 vecMesafe;
+
+    RaycastHit2D ray;
+    public LayerMask layermask;
+
+    int playerCan;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        fizik = GetComponent<Rigidbody2D>();
+
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+    }
+
+    void takip()
+    {
+
+        if (Vector2.Distance(transform.position, target.position) > distance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, hiz * Time.deltaTime);
+        }
+
+
+        if (transform.position.x > target.position.x)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+            transform.localScale = new Vector3(1, 1, 1);
+    }
+
+    void Update()
+    {
+
+        vecMesafe = new Vector2(transform.position.x - target.position.x, 0);
+        Debug.Log(ENcan);
+        if (death == true)
+        {
+            Invoke("destroyEn", 5.0f);
+        }
+
+
+
+    }
+
+    void destroyEn()
+    {
+        Destroy(gameObject);
+    }
+
+    private void FixedUpdate()
+    {
+        GameObject thePlayer = GameObject.FindGameObjectWithTag("Player");
+        karakter_kontrol_levels karakterKontrol = thePlayer.GetComponent<karakter_kontrol_levels>();
+        playerCan = karakterKontrol.can;
+
+
+        animasyon();
+
+        benigordumu();
+
+        
+
+        if (ray.collider.tag == "Player")
+        {
+
+            if (ENcan != 0 && playerCan>0)
+            {
+                takip();
+                attack();
+            }
+                
+        }
+        
+
+        
+
+
+    }
+
+    void animasyon()
+    {
+        if (ENcan != 0 && hasarAldı == false && attackYapti == false && death == false)
+        {
+
+            beklemeAnimTime += Time.deltaTime;
+            if (beklemeAnimTime > 0.09f)
+            {
+                spriteRenderer.sprite = beklemeAnim[beklemeAnimSayac++];
+                if (beklemeAnimSayac == beklemeAnim.Length)
+                {
+                    beklemeAnimSayac = 0;
+                }
+                beklemeAnimTime = 0;
+            }
+        }
+
+
+
+        if (ENcan <= 0)
+        {
+            death = true;
+            fizik.velocity = new Vector2(0, 0);
+            ENcan = 0;
+            gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+            fizik.isKinematic = true;
+            olumAnimTime += Time.deltaTime;
+            if (olumAnimTime > 0.09f)
+            {
+                spriteRenderer.sprite = olumAnim[olumAnimSayac++];
+                if (olumAnimSayac == olumAnim.Length)
+                {
+                    olumAnimSayac = olumAnim.Length - 1;
+
+                }
+
+                olumAnimTime = 0;
+            }
+        }
+
+
+
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "sword")
+        {
+            hasarAldı = true;
+            ENcan -= 10;
+            hasarAnimTime += Time.deltaTime;
+            if (hasarAnimTime > 0.09f)
+            {
+                spriteRenderer.sprite = hasarAnim[hasarAnimSayac++];
+                if (hasarAnimSayac == hasarAnim.Length)
+                {
+                    hasarAnimSayac = 0;
+                }
+                hasarAnimTime = 0;
+            }
+            hasarAldı = true;
+
+
+        }
+        else
+            hasarAldı = false;
+    }
+
+    void benigordumu()
+    {
+        Vector3 rayYonum = target.transform.position - transform.position;
+        ray = Physics2D.Raycast(transform.position, rayYonum, 1000, layermask);
+        Debug.DrawLine(transform.position, ray.point, Color.green);
+    }
+
+    void attack()
+    {
+
+        if (vecMesafe.x <= 0.4f && vecMesafe.x >= 0f)
+        {
+            if (death == false)
+            {
+
+                range.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+                attackTime += Time.deltaTime;
+                if (attackTime > 0.09f)
+                {
+                    spriteRenderer.sprite = attackAnim[attackSayac++];
+                    if (attackSayac == attackAnim.Length)
+                    {
+                        attackSayac = 0;
+                    }
+                    attackTime = 0;
+                }
+                attackYapti = true;
+            }
+        }
+        else if (vecMesafe.x >= -0.4f && vecMesafe.x <= 0f)
+        {
+            if (death == false)
+            {
+
+                range.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+                attackTime += Time.deltaTime;
+                if (attackTime > 0.09f)
+                {
+                    spriteRenderer.sprite = attackAnim[attackSayac++];
+                    if (attackSayac == attackAnim.Length)
+                    {
+                        attackSayac = 0;
+                    }
+                    attackTime = 0;
+                }
+                attackYapti = true;
+            }
+        }
+
+        else if (vecMesafe.x > 0.4f || vecMesafe.x < -0.4f)
+        {
+
+            range.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            attackYapti = false;
+
+            if (death == false)
+            {
+                yurumeTime += Time.deltaTime;
+                if (yurumeTime > 0.09f)
+                {
+                    spriteRenderer.sprite = yurumeAnim[yurumeSayac++];
+                    if (yurumeSayac == yurumeAnim.Length)
+                    {
+                        yurumeSayac = 0;
+                    }
+                    yurumeTime = 0;
+                }
+            }
+        }
+    }
+
+}
