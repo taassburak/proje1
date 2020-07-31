@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class ents_kontrol : MonoBehaviour
 {
+    public AudioSource sword;
     
     public Sprite[] beklemeAnim;
     float beklemeAnimTime = 0;
     int beklemeAnimSayac = 0;
 
-    public Sprite[] hasarAnim;
-    float hasarAnimTime = 0;
-    int hasarAnimSayac = 0;
+   
 
     public Sprite[] olumAnim;
     float olumAnimTime = 0;
@@ -52,6 +51,9 @@ public class ents_kontrol : MonoBehaviour
 
     void Start()
     {
+        sword.volume = 0.160f;
+        sword.playOnAwake = false;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         fizik = GetComponent<Rigidbody2D>();
 
@@ -80,7 +82,7 @@ public class ents_kontrol : MonoBehaviour
     {
 
         vecMesafe = new Vector2(transform.position.x - target.position.x, 0);
-        Debug.Log(ENcan);
+        
         if (death == true)
         {
             Invoke("destroyEn", 5.0f);
@@ -97,9 +99,7 @@ public class ents_kontrol : MonoBehaviour
 
     private void FixedUpdate()
     {
-        GameObject thePlayer = GameObject.FindGameObjectWithTag("Player");
-        karakter_kontrol_levels karakterKontrol = thePlayer.GetComponent<karakter_kontrol_levels>();
-        playerCan = karakterKontrol.can;
+        
 
 
         animasyon();
@@ -111,8 +111,9 @@ public class ents_kontrol : MonoBehaviour
         if (ray.collider.tag == "Player")
         {
 
-            if (ENcan != 0 && playerCan>0)
+            if (ENcan != 0)
             {
+                sword.Play();
                 takip();
                 attack();
             }
@@ -175,17 +176,7 @@ public class ents_kontrol : MonoBehaviour
         {
             hasarAldı = true;
             ENcan -= 10;
-            hasarAnimTime += Time.deltaTime;
-            if (hasarAnimTime > 0.09f)
-            {
-                spriteRenderer.sprite = hasarAnim[hasarAnimSayac++];
-                if (hasarAnimSayac == hasarAnim.Length)
-                {
-                    hasarAnimSayac = 0;
-                }
-                hasarAnimTime = 0;
-            }
-            hasarAldı = true;
+            
 
 
         }

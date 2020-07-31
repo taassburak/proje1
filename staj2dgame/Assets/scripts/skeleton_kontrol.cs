@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class skeleton_kontrol : MonoBehaviour
 {
+
+    public AudioSource sword;
+
     public GameObject range;
     public Sprite[] beklemeAnim;
     float beklemeAnimTime = 0;
@@ -58,6 +61,9 @@ public class skeleton_kontrol : MonoBehaviour
 
     void Start()
     {
+        sword.volume = 0.160f;
+        sword.playOnAwake = false;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         fizik = GetComponent<Rigidbody2D>();
 
@@ -86,8 +92,7 @@ public class skeleton_kontrol : MonoBehaviour
     {
 
         vecMesafe = new Vector2(transform.position.x - target.position.x, 0);
-        Debug.Log("blok"+blokladi);
-        Debug.Log("hasar"+hasarAldı);
+        
         if (death == true)
         {
             Invoke("destroyEn", 5.0f);
@@ -104,9 +109,7 @@ public class skeleton_kontrol : MonoBehaviour
 
     private void FixedUpdate()
     {
-        GameObject thePlayer = GameObject.FindGameObjectWithTag("Player");
-        karakter_kontrol_levels karakterKontrol = thePlayer.GetComponent<karakter_kontrol_levels>();
-        playerCan = karakterKontrol.can;
+        
 
 
         animasyon();
@@ -117,7 +120,7 @@ public class skeleton_kontrol : MonoBehaviour
 
         if (ray.collider.tag == "Player")
         {
-            if (ENcan != 0 && playerCan>0)
+            if (ENcan != 0)
             {
                 takip();
                 attack();                
@@ -126,10 +129,15 @@ public class skeleton_kontrol : MonoBehaviour
         if (hasarAldı)
         {
             Invoke("blok", 2.88f);
+            
         }
         else
         {
             blokladi = false;
+        }
+        if (blokladi ==false)
+        {
+            Invoke("attack",0.5f);
         }
     }
 
@@ -181,10 +189,15 @@ public class skeleton_kontrol : MonoBehaviour
     {
         if (col.tag == "sword")
         {
+
+            sword.Play();
+
             if (blokladi==false)
             {
+
+
                 hasarAldı = true;
-                ENcan -= 2;
+                ENcan -= 10;
 
                 hasarAnimTime += Time.deltaTime;
                 if (hasarAnimTime > 0.09f)

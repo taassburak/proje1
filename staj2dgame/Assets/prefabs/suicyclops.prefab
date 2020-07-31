@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 3415556936164708654}
   m_Layer: 0
   m_Name: suicyclops
-  m_TagString: Untagged
+  m_TagString: suicy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

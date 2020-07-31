@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class axeguy_kontrol : MonoBehaviour
 {
+
+    public AudioSource sword;
+
     public GameObject range;
     public Sprite[] beklemeAnim;
     float beklemeAnimTime = 0;
@@ -51,6 +54,9 @@ public class axeguy_kontrol : MonoBehaviour
     int playerCan;
     void Start()
     {
+        sword.volume = 0.160f;
+        sword.playOnAwake = false;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         fizik = GetComponent<Rigidbody2D>();
 
@@ -81,7 +87,7 @@ public class axeguy_kontrol : MonoBehaviour
     {
         
         vecMesafe = new Vector2(transform.position.x - target.position.x, 0);
-        Debug.Log(playerCan);
+       
         if (death==true)
         {
             Invoke("destroyEn", 5.0f);
@@ -98,10 +104,7 @@ public class axeguy_kontrol : MonoBehaviour
 
     private void FixedUpdate()
     {
-        GameObject thePlayer = GameObject.FindGameObjectWithTag("Player");
-        karakter_kontrol_levels karakterKontrol = thePlayer.GetComponent<karakter_kontrol_levels>();
-        playerCan = karakterKontrol.can;
-
+        
 
         animasyon();
 
@@ -112,7 +115,7 @@ public class axeguy_kontrol : MonoBehaviour
         if (ray.collider.tag == "Player")
         {
 
-            if (ENcan != 0 && playerCan>0)
+            if (ENcan != 0)
             {
                 takip();
                 attack();
@@ -169,6 +172,8 @@ public class axeguy_kontrol : MonoBehaviour
     {
         if (col.tag == "sword")
         {
+            sword.Play();
+
             hasarAldı = true;
             ENcan -= 10;
             hasarAnimTime += Time.deltaTime;

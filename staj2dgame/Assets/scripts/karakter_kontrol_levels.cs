@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class karakter_kontrol_levels : MonoBehaviour
 {
-
-
+    public AudioSource jump;
+    public AudioSource walk;
+    public AudioSource climbing;
+    public AudioSource getcoin;
+    public AudioSource heal;
+    public AudioSource deathsound;
 
     public GameObject range;
     public Image SiyahArkaPlan;
@@ -65,12 +69,19 @@ public class karakter_kontrol_levels : MonoBehaviour
     GameObject sonrakilevelbuton;
     GameObject t1obj, tutcollider, t2obj, tutcollider2, t3obj, tutcollider3, t4obj, tutcollider4, t1but, t2but, t3but, t4but;
 
-
+    float walksesTime=0;
+    float tirmanmaTime = 0;
+    
 
 
     void Start()
     {
-
+        heal.volume = 0.200f;
+        getcoin.volume = 0.185f;
+        climbing.volume = 0.170f;
+        walk.volume = 0.170F;
+        jump.volume = 0.170f;
+        
 
         objdef();
 
@@ -103,10 +114,14 @@ public class karakter_kontrol_levels : MonoBehaviour
 
     void Update()
     {
+
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (jumpeonce && can != 0)
             {
+                
+                jump.Play();
                 physics.AddForce(new Vector2(0, 150));
                 jumpeonce = false;
             }
@@ -116,7 +131,7 @@ public class karakter_kontrol_levels : MonoBehaviour
     void FixedUpdate()
     {
 
-        //Debug.Log(can);
+
         Animation();
         charmove();
         Attack();
@@ -125,9 +140,10 @@ public class karakter_kontrol_levels : MonoBehaviour
 
         if (can <= 0)
         {
-            Time.timeScale = 0.4f;
+            
+            Time.timeScale = 0.3f;
             cantext.enabled = false;
-            siyaharkaPlanSayac += 0.03f;
+            siyaharkaPlanSayac += 0.02f;
             SiyahArkaPlan.color = new Color(0, 0, 0, siyaharkaPlanSayac);
             anaMenuyeDonZaman += Time.deltaTime;
 
@@ -165,6 +181,11 @@ public class karakter_kontrol_levels : MonoBehaviour
         t3but.gameObject.SetActive(false);
         t4but = GameObject.FindGameObjectWithTag("t4but");
         t4but.gameObject.SetActive(false);
+
+
+   
+        
+        
     }
 
     void charmove()
@@ -172,6 +193,7 @@ public class karakter_kontrol_levels : MonoBehaviour
         // karakteri yürütmek için
         if (can != 0)
         {
+            
             horizontal = Input.GetAxisRaw("Horizontal");
             vec = new Vector3(horizontal * hiz, physics.velocity.y, 0);
             physics.velocity = vec;
@@ -195,6 +217,8 @@ public class karakter_kontrol_levels : MonoBehaviour
 
             if (can >= 70)
             {
+                
+                heal.Play();
                 can = 100;
                 cantext.text = "CAN = " + can + " / 100";
                 col.GetComponent<CircleCollider2D>().enabled = false;
@@ -208,7 +232,10 @@ public class karakter_kontrol_levels : MonoBehaviour
             }
             else if (can < 70)
             {
-                can += 10;
+                
+                heal.Play();
+
+                can += 25;
                 cantext.text = "CAN = " + can + " / 100";
                 col.GetComponent<CircleCollider2D>().enabled = false;
                 col.GetComponent<can>().enabled = true;
@@ -224,6 +251,8 @@ public class karakter_kontrol_levels : MonoBehaviour
 
         if (col.gameObject.tag == "gold")
         {
+            
+            getcoin.Play();
 
             coin += 1;
             cointext.text = "ALTIN = " + coin + " / 15";
@@ -241,10 +270,16 @@ public class karakter_kontrol_levels : MonoBehaviour
 
         if (col.gameObject.tag == "levelbitti")
         {
+            
             Time.timeScale = 0;
             for (int i = 0; i < sonrakilevelbuton.transform.childCount; i++)
             {
                 sonrakilevelbuton.transform.GetChild(i).gameObject.SetActive(true);
+                
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 4)
+            {
+                sonrakilevelbuton.transform.GetChild(2).GetComponent<Button>().interactable = false;
             }
         }
 
@@ -275,8 +310,12 @@ public class karakter_kontrol_levels : MonoBehaviour
             t4but.gameObject.SetActive(true);
             Time.timeScale = 0;
         }
+        if (col.gameObject.tag =="altsinir")
+        {
+            can = 0;
 
-
+        }
+       
 
     }
 
@@ -288,7 +327,7 @@ public class karakter_kontrol_levels : MonoBehaviour
             t1obj.gameObject.SetActive(false);
             t1but.gameObject.SetActive(false);
             Time.timeScale = 1;
-            Debug.Log("b1");
+            
 
         }
         if (gelenbuton == 1)
@@ -314,7 +353,7 @@ public class karakter_kontrol_levels : MonoBehaviour
         }
 
 
-    }
+    } 
 
     void OnTriggerStay2D(Collider2D col)
     {
@@ -362,6 +401,7 @@ public class karakter_kontrol_levels : MonoBehaviour
             }
 
         }
+
         if (col.gameObject.tag == "flyingeye")
         {
             if (bloklama == false)
@@ -376,6 +416,7 @@ public class karakter_kontrol_levels : MonoBehaviour
             }
 
         }
+
         if (col.gameObject.tag == "goblin")
         {
             if (bloklama == false)
@@ -390,20 +431,7 @@ public class karakter_kontrol_levels : MonoBehaviour
             }
 
         }
-        if (col.gameObject.tag == "ents")
-        {
-            if (bloklama == false)
-            {
-                hasarYemeTime += Time.deltaTime;
-                if (hasarYemeTime > 1.2f)
-                {
-                    can -= 8;
-                    cantext.text = "CAN = " + can + " / 100";
-                    hasarYemeTime = 0;
-                }
-            }
-
-        }
+        
         if (col.gameObject.tag == "mushroom")
         {
             if (bloklama == false)
@@ -418,6 +446,7 @@ public class karakter_kontrol_levels : MonoBehaviour
             }
 
         }
+
         if (col.gameObject.tag == "skeleton")
         {
             if (bloklama == false)
@@ -432,6 +461,7 @@ public class karakter_kontrol_levels : MonoBehaviour
             }
 
         }
+
         if (col.gameObject.tag == "suicy")
         {
             if (bloklama == false)
@@ -449,19 +479,60 @@ public class karakter_kontrol_levels : MonoBehaviour
 
         if (col.gameObject.tag == "ladder" && can != 0)
         {
+
             if (Input.GetKey("w"))
             {
+                tirmanmaTime += Time.deltaTime;
+                if (tirmanmaTime > 0.9)
+                {
+                    
+                    climbing.Play();
+                    tirmanmaTime = 0;
+                }
                 physics.velocity = new Vector2(0, tirmanma);
             }
             else if (Input.GetKey("s"))
             {
+                tirmanmaTime += Time.deltaTime;
+                if (tirmanmaTime > 0.9)
+                {
+                    
+                    climbing.Play();
+                    tirmanmaTime = 0;
+                }
                 physics.velocity = new Vector2(0, -tirmanma);
             }
         }
 
-    }
+        if (col.gameObject.tag == "ent")
+        {
+            if (bloklama == false)
+            {
+                hasarYemeTime += Time.deltaTime;
+                if (hasarYemeTime > 1.1f)
+                {
+                    can -= 8;
+                    cantext.text = "CAN = " + can + " / 100";
+                    hasarYemeTime = 0;
+                }
+            }
 
-  
+        }
+
+        if (col.gameObject.tag== "saw")
+        {
+            hasarYemeTime += Time.deltaTime;
+            if (hasarYemeTime > 0.5f)
+            {
+                can -= 2;
+                cantext.text = "CAN = " + can + " / 100";
+                hasarYemeTime = 0;
+            }
+
+        }
+        
+
+    }
 
     public void levelarasi(int gelenbutonsecim)
     {
@@ -479,10 +550,9 @@ public class karakter_kontrol_levels : MonoBehaviour
         }
     }
 
-
     void Animation()
     {
-
+        
         if (jumpeonce == true)
         {
             if (horizontal == 0 && can != 0)
@@ -511,6 +581,14 @@ public class karakter_kontrol_levels : MonoBehaviour
                     }
                     runningTime = 0;
                 }
+                walksesTime += Time.deltaTime;
+                if (walksesTime > 0.4f)
+                {
+                    
+                    walk.Play();
+                    walksesTime = 0;
+                }
+
                 transform.localScale = new Vector3(-1, 1, 1);
             }
             else if (horizontal < 0 && can != 0)
@@ -519,18 +597,28 @@ public class karakter_kontrol_levels : MonoBehaviour
                 if (runningTime > 0.1f)
                 {
                     spriteRenderer.sprite = yurumeAnim[yurumeAnimSayac++];
+                    
                     if (yurumeAnimSayac == yurumeAnim.Length)
                     {
                         yurumeAnimSayac = 0;
                     }
                     runningTime = 0;
                 }
+                walksesTime += Time.deltaTime;
+                if (walksesTime > 0.4f)
+                {
+                    
+                    walk.Play();
+                    walksesTime = 0;
+                }
+
                 transform.localScale = new Vector3(1, 1, 1);
             }
         }
 
         else if (jumpeonce == false && can != 0)
         {
+            
             spriteRenderer.sprite = ziplamaAnim[0];
 
             if (horizontal > 0)
@@ -548,6 +636,7 @@ public class karakter_kontrol_levels : MonoBehaviour
 
         if (can <= 0)
         {
+            
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             physics.velocity = new Vector2(0, 0);
             can = 0;
@@ -571,11 +660,14 @@ public class karakter_kontrol_levels : MonoBehaviour
         {
             if (Input.GetButton("Fire1"))
             {
+                
+
                 range.gameObject.GetComponent<CircleCollider2D>().enabled = true;
 
                 attackTime += Time.deltaTime;
                 if (attackTime > 0.001f)
                 {
+                    
                     spriteRenderer.sprite = attackAnim[attackAnimSayac++];
                     if (attackAnimSayac == attackAnim.Length)
                     {
@@ -613,6 +705,7 @@ public class karakter_kontrol_levels : MonoBehaviour
 
             }
             else
+                bloklama = false;
                 hiz = 2f;
         }
 

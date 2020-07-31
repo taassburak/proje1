@@ -6,6 +6,8 @@ using UnityEngine;
 public class flyingEye_kontrol : MonoBehaviour
 {
 
+    public AudioSource sword;
+
     public Sprite[] beklemeAnim;
     float beklemeAnimTime = 0;
     int beklemeAnimSayac = 0;
@@ -51,6 +53,10 @@ public class flyingEye_kontrol : MonoBehaviour
 
     void Start()
     {
+
+        sword.volume = 0.160f;
+        sword.playOnAwake = false;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         fizik = GetComponent<Rigidbody2D>();
 
@@ -79,12 +85,10 @@ public class flyingEye_kontrol : MonoBehaviour
     {
 
         vecMesafe = new Vector2(transform.position.x - target.position.x, 0);
-        Debug.Log(ENcan);
+        
         if (death == true)
         {
 
-           
-            
            Invoke("destroyEn", 3.0f);
         }
 
@@ -100,9 +104,7 @@ public class flyingEye_kontrol : MonoBehaviour
     private void FixedUpdate()
     {
 
-        GameObject thePlayer = GameObject.FindGameObjectWithTag("Player");
-        karakter_kontrol_levels karakterKontrol = thePlayer.GetComponent<karakter_kontrol_levels>();
-        playerCan = karakterKontrol.can;
+        
 
 
         animasyon();
@@ -111,7 +113,7 @@ public class flyingEye_kontrol : MonoBehaviour
 
 
 
-        if (ray.collider.tag == "Player" && playerCan>0)
+        if (ray.collider.tag == "Player")
         {
 
             if (ENcan != 0)
@@ -177,6 +179,7 @@ public class flyingEye_kontrol : MonoBehaviour
     {
         if (col.tag == "sword")
         {
+            sword.Play();
             hasarAldı = true;
             ENcan -= 10;
             hasarAnimTime += Time.deltaTime;

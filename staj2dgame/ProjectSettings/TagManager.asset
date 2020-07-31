@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - dusman
+  - sword
+  - zombi
+  - gold
+  - can
+  - axeguy
+  - axe
+  - patlamaRange
+  - strikerSword
+  - ent
+  - flyingeye
+  - goblin
+  - mushroom
+  - ladder
+  - t1go
+  - t1
+  - t2go
+  - t2
+  - t3go
+  - t3
+  - t4
+  - t4go
+  - t1but
+  - t2but
+  - t3but
+  - t4but
+  - butons
+  - levelbitti
+  - suicy
+  - skeleton
+  - altsinir
+  - charbut1
+  - charbut2
+  - saw
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - zombi
+  - Player
+  - coin
+  - can
+  - axeguy
+  - suicyclops
+  - striker
+  - ent
+  - flyingEye
+  - goblin
+  - mushroom
+  - skeleton
+  - ladder
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

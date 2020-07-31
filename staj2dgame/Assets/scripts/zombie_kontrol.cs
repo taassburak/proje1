@@ -6,6 +6,12 @@ using UnityEngine;
 public class zombie_kontrol : MonoBehaviour
 {
 
+    public AudioSource sword;
+
+    public Sprite[] yurumeAnim;
+    float yurumeAnimTime = 0;
+    int yurumeAnimSayac = 0;
+
     public Sprite[] beklemeAnim;
     float beklemeAnimTime = 0;
     int beklemeAnimSayac = 0;
@@ -41,6 +47,9 @@ public class zombie_kontrol : MonoBehaviour
      
     void Start()
     {
+        sword.volume = 0.160f;
+        sword.playOnAwake = false;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         fizik = GetComponent<Rigidbody2D>();
 
@@ -77,9 +86,7 @@ public class zombie_kontrol : MonoBehaviour
     private void FixedUpdate()
     {
 
-        GameObject thePlayer = GameObject.FindGameObjectWithTag("Player");
-        karakter_kontrol_levels karakterKontrol = thePlayer.GetComponent<karakter_kontrol_levels>();
-        playerCan = karakterKontrol.can;
+        
 
         animasyon();
 
@@ -88,7 +95,7 @@ public class zombie_kontrol : MonoBehaviour
         if (ray.collider.tag == "Player")
         {
 
-            if (ENcan != 0 && playerCan>0)
+            if (ENcan != 0)
             {
                 takip();
             }
@@ -111,7 +118,21 @@ public class zombie_kontrol : MonoBehaviour
                 beklemeAnimTime = 0;
             }
         }
-        
+
+        if (ENcan != 0 && hasarAldı == false)
+        {
+            yurumeAnimTime += Time.deltaTime;
+            if (yurumeAnimTime > 0.09f)
+            {
+                spriteRenderer.sprite = yurumeAnim[yurumeAnimSayac++];
+                if (yurumeAnimSayac == yurumeAnim.Length)
+                {
+                    yurumeAnimSayac = 0;
+                }
+                yurumeAnimTime = 0;
+            }
+        }
+
 
         if (ENcan==0)
         {
@@ -141,6 +162,7 @@ public class zombie_kontrol : MonoBehaviour
     {
         if (col.tag == "sword")
         {
+            sword.Play();
             hasarAldı = true;
             ENcan -= 20;
             hasarAnimTime += Time.deltaTime;

@@ -196,7 +196,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4305c0f997d512d40b3ff1bb0effca54, type: 3}
   - {fileID: 21300000, guid: 82bad9bc89be2e942a793f4700b8f578, type: 3}
   - {fileID: 21300000, guid: 202361ffa62cf5e4f895ba5903034c0c, type: 3}
-  can: 15
+  can: 100
   cointext: {fileID: 0}
   cantext: {fileID: 0}
   tirmanma: 1

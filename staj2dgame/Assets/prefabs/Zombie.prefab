@@ -115,6 +115,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f1e68a072479144ad3ecaafa90ba3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sword: {fileID: 0}
+  yurumeAnim:
+  - {fileID: 21300000, guid: 182063217c5c90b45b95d24ae19f15b1, type: 3}
+  - {fileID: 21300000, guid: 9f966f3e1c3243a4e9ba4b87ec5538f4, type: 3}
+  - {fileID: 21300000, guid: b6fdb724859c4bb4aabce86513bf1d7d, type: 3}
+  - {fileID: 21300000, guid: 693853ddfef795443a61c5fdcf0c234a, type: 3}
+  - {fileID: 21300000, guid: ea1adce77861b4f4ab4b9f0bb073181f, type: 3}
+  - {fileID: 21300000, guid: aeb57e2543861e947bfa9484ac1fab0c, type: 3}
+  - {fileID: 21300000, guid: b1b589527b9174e41b6bbc9031caf5e8, type: 3}
+  - {fileID: 21300000, guid: 3303d8027cf87f34daf445f7a893267e, type: 3}
+  - {fileID: 21300000, guid: ee6f048d4925dae41bd0e69aebd7c532, type: 3}
+  - {fileID: 21300000, guid: a73ea460ef26faf47a5fd602369420e2, type: 3}
+  - {fileID: 21300000, guid: 38e07c4dde925fd48b7a884a65807033, type: 3}
   beklemeAnim:
   - {fileID: 21300000, guid: aeb4f4afa8e374642939fbc27d910818, type: 3}
   - {fileID: 21300000, guid: 72ff85fa0450f5a4d9610320f1fa2085, type: 3}

@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class bomberman_kontrol : MonoBehaviour
 {
-    
+    public AudioSource patlama;
+
     public Sprite[] beklemeAnim;
     float beklemeAnimTime = 0;
     int beklemeAnimSayac = 0;
@@ -39,8 +40,14 @@ public class bomberman_kontrol : MonoBehaviour
 
     public GameObject patlamaRange;
 
+
+    float patlamaSes = 0;
+
     void Start()
     {
+        patlama.volume = 0.180f;
+        patlama.playOnAwake = false;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         fizik = GetComponent<Rigidbody2D>();
 
@@ -151,12 +158,17 @@ public class bomberman_kontrol : MonoBehaviour
 
     void attack()
     {
-
+        patlamaSes += Time.deltaTime;
+        if(patlamaSes > 0.7f)
+        {
+            patlama.Play();
+        }
+        
         patlamaRange.GetComponent<Collider2D>().enabled = true;
         patlamaTime += Time.deltaTime;
         if (patlamaTime > 0.09f)
         {
-
+            
             spriteRenderer.sprite = patlamaAnim[patlamaSayac++];
             if (patlamaSayac == patlamaAnim.Length)
             {

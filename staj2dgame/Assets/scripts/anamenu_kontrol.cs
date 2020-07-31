@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class anamenu_kontrol : MonoBehaviour
 {
+    
     GameObject leveller;
+
     void Start()
     {
-        
+
+        //PlayerPrefs.DeleteAll();
+
         leveller = GameObject.Find("LEVELLER");
         for (int i = 0; i < leveller.transform.childCount; i++)
         {
@@ -19,9 +23,11 @@ public class anamenu_kontrol : MonoBehaviour
         for (int i = 0; i < PlayerPrefs.GetInt("kacincilevel"); i++)
         {
             leveller.transform.GetChild(i).GetComponent<Button>().interactable = true;
+            leveller.transform.GetChild(i+1).GetComponent<Button>().interactable = true;
 
         }
     }
+
     public void butonSec(int gelenButon)
     {
         if (gelenButon == 1)
